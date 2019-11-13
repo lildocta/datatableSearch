@@ -50,3 +50,4 @@ Full html Example
       >
   </lightning-datatable>
 ```
+![](datatableSearch.gif)
