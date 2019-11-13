@@ -29,3 +29,16 @@ Datatable Example
       >
   </lightning-datatable>
 ```
+
+Full html Example
+```
+  <div class="slds-align_absolute-center slds-m-around_medium">
+            <c-datatable-search label="" all-data={mockData} placeholder="Search" onfiltered={handleResults}></c-datatable-search>
+        </div>
+  <lightning-datatable
+      key-field="Id" //can be any key field you want
+      data={filteredData} //this should be a different variable then the allData variable you pass to the lwc
+      columns={columns} //whatever columns you want to display
+      >
+  </lightning-datatable>
+```
