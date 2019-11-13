@@ -1,10 +1,10 @@
 <template>
     <div class="slds-card">
         <div class="slds-align_absolute-center slds-m-around_medium">
-            <c-datatable-search label="" all-data={mockData} placeholder="Search" onfiltered={handleResults}></c-datatable-search>
+            <c-datatable-search all-data={allData} onfiltered={handleResults}></c-datatable-search>
         </div>
         <lightning-datatable
-            key-field="Id"
+            key-field="Id" 
             data={filteredData} 
             columns={columns}
             >

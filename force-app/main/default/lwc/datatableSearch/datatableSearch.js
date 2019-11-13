@@ -29,13 +29,13 @@ export default class datatableSearch extends LightningElement {
         if(this.fieldsToFilterOn.length === 0 && this.allData.length !== 0){
             this.fieldsToFilterOn = Object.keys(this.allData[0]);
             return true;
-        } else if(this.fieldsToFilterOn.length === 0) {
+        } else if(this.fieldsToFilterOn.length === 0 ) {
             this.noFields = true;
             this.template.querySelector('lightning-input').value = '';
             this.showToast('Search Disabled', 'There are no fields to filter on', 'info')
             return false;
         }
-        return false;
+        return true;
     }
 
     search(event){
